@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+    
+  
+}
+header {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+}
+body {
+    background-color: #8aac0f;
+    
+}
+
+#autoclickimg {
+    background-color: rgba(241, 224, 224, 0);
+    padding: 2px;
+    border: 3px ridge rgba(0, 0, 0, 0.342);
+   position: relative;
+    margin-top: 6em;
+    width: 90px;
+    height: auto;
+}
+
+.centered {
+    position: absolute;
+    margin-top: 4em;
+    text-align: left;
+    z-index: 3;
+  }
+h1 {
+    margin-left: 63rem;
+    font-size: 6em;
+    z-index: 9;
+    position: relative;
+    color: bisque;
+}
+  
+.container {
+    position: absolute;
+    left: 50em;
+    top: 55%;
+    text-align: left;
+    color: white;
+    font-size: large;
+    z-index: 3;
+  }
+
+.black {
+    width: 400px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    z-index: 2;
+}
+#right {right: 0;
+    position: absolute;
+    top: 0;
+    width: 520px;
+}
+
+#background{
+    
+   height: 80vh;
+   margin-left: 25em;
+   z-index: 1;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10%;
+    
+   
+    
+}
+#score {
+    z-index: 7;
+    background-color: rgba(241, 224, 224, 0.308);
+    padding: 0 0.3em 0 0.3em;
+    border: 10px ridge rgba(0, 0, 0, 0.342);
+    border-radius: 0.2em;
+    width: fit-content;
+    margin-left: 20%;
+    margin-top: 0.5%;
+    font-size: 5em;
+    position: relative;
+    color: rgba(8, 12, 1, 0.932);
+    font-weight: bold;
+    
+}
+#keyboard{
+    
+    position: absolute;
+    z-index: 3;
+   margin-left: 45em;
+   height: 20%;
+    bottom: 0px;
+}
+
+
+
+@media screen and (max-width: 950px) {
+   #img {
+    width: 100%;
+   }
+ #score {
+font-size: 2em;
+border: 5px ridge rgba(0, 0, 0, 0.342);}
+
+   .black {display: none;}
+
+    #background {
+        width: 100%;
+    position: absolute;
+    z-index: 1;
+        height: auto;
+       object-fit: cover;
+        overflow: hidden; 
+        margin-left: 0;
+        border: 0px
+    }
+    #keyboard{
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+        height: 20%;
+        bottom: 0px;
+        margin-left: 0;
+    }
+
+    #autoclickimg {
+        background-color: rgba(241, 224, 224, 0);
+        padding: 2px;
+        border: 3px ridge rgba(0, 0, 0, 0.342);
+       position: relative;
+        margin-top: 6em;
+        width: 20%;
+        height: auto;
+
+    }
+    .container {
+        left: 30px;
+       
+        top: 45%;
+    }
+    h1 {
+        
+        font-size: 2em;
+        z-index: 9;
+        position: absolute;
+        color: bisque;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+}
